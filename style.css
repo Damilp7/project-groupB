@@ -10,8 +10,9 @@ body{
 }
 
 .container{
-  display: grid;
-  grid-template-rows: repeat(7, 1fr);
+  display: flex;
+  /* grid-template-rows: repeat(7, 1fr); */
+  flex-direction: column;
 }
 
 /* HEADER SECTION CSS STARTS HERE */
@@ -179,11 +180,12 @@ background-color: rgb(174, 223, 223);
 
 /* /* footer2 container starts here  */
 .footer-2{
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+  /* display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 2fr; */
+  display: flex;
+  justify-content: space-between;
   background-color:  hsl(260, 8%, 14%);
   font-family: Poppins;
-  /* color: white; */
   font-weight: 300;
   padding: 5rem;
 }
@@ -278,41 +280,6 @@ background-color: rgb(174, 223, 223);
   
 }
 
-@media screen and (max-width: 600px) {
-  .footer-2 {
-  grid-template-columns: 1fr;
-     padding-left: 0px;
-      justify-items: center;
-      margin: auto;
-  }
-  .footer-2 h1{
-      margin: auto;
-  padding-left: 1.7rem;
-  }
-  .footer-2 .footer-list{
-      padding-left: 0px;
-      text-align: center;
-      margin: auto;
-  }
-  
-  .footer-list-brand {
-      display: flex;
-      flex-direction: column;
-      margin: auto;
-  }
-
-  
-  .footer-brand .footer-list {
-      display: flex;
-      flex-direction: row;
-      margin: auto;
-  }
-  
-  .footer-btn {
-      margin-bottom: 2rem;
-  }
-}
-
 /* Nav container css ends here */
 
 /* header container css starts here */
@@ -355,3 +322,37 @@ background-color: rgb(174, 223, 223);
 /* footer1 container ends here */
 
 /* footer2 container starts here */
+@media screen and (max-width: 600px) {
+  .footer-2 {
+  grid-template-columns: 1fr;
+     padding-left: 0px;
+      justify-items: center;
+      margin: auto;
+  }
+  .footer-2 h1{
+      margin: auto;
+  padding-left: 1.7rem;
+  }
+  .footer-2 .footer-list{
+      padding-left: 0px;
+      text-align: center;
+      margin: auto;
+  }
+  
+  .footer-list-brand {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+  }
+
+  
+  .footer-brand .footer-list {
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+  }
+  
+  .footer-btn {
+      margin-bottom: 2rem;
+  }
+}
