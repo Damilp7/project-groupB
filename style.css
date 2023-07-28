@@ -174,7 +174,37 @@ background-color: rgb(174, 223, 223);
 
 
 /* footer1 container starts here */
-
+.footer1-container .footer1{
+  display: flex;
+  flex-direction: column;
+  background: hsl(255, 11%, 22%) url(bg-boost-desktopfo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.footer1-container .footer1 h1{
+  color: white;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 18px;
+}
+.footer1-container .footer1 button{
+  border-radius: 20px;
+  background-color: hsl(180, 66%, 49%) ;
+  font-family: Poppins;
+  color: white;
+  border: none;
+  font-weight: 500;
+  padding:8px 20px;
+  font-size: 18px;
+}
+.footer1-container .footer1 button:hover{
+  background-color: hsla(180, 64%, 58%, 0.692);
+cursor: grab;}
 /* footer1 container ends here */
 
 /* /* footer2 container starts here  */
@@ -351,7 +381,13 @@ background-color: rgb(174, 223, 223);
 /* FOOTER SECTION CSS STARTS HERE */
  
 /* footer1 container starts here */
-
+@media (max-width: 375px){
+  .footer1-container .footer1{
+  background: hsl(255, 11%, 22%) url(bg-boost-mobile.svg);
+  background-position: center;
+  background-size: cover; 
+}
+}
 /* footer1 container ends here */
 
 /* footer2 container starts here */
