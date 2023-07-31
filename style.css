@@ -113,41 +113,7 @@ cursor: pointer;
 /* Nav container css ends here */
 
 /* header container css starts here */
-header{
-  width: 100vw;
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-}
-header .part1{
-  padding: 70px;
-  font-size: 35px;
-  margin-left: 30px;
-}
-header .part1 h1{
-  padding: 0;
-  font-weight: bold;
-  font-family:"poppins", serif;
-}
-header .part1 p{
-  font-size: 18px;
-  font-weight:200;
-  font-family:"poppins", serif ;
-  color: rgb(133, 127, 127);
-}
-header .part1 button{
-  border-radius: 20px;
-  border-color: hsl(180, 66%, 49%);
-  background-color:hsl(180, 66%, 49%) ;
-  font-size: 18px;
-  color: white;
-  padding: 12px;
-  font-family: "poppins", serif;
-}
-header .part1 button:hover{
-cursor: pointer;
-background-color: rgb(174, 223, 223);
-}
+
 /* header container css ends here */
 
 /* HEADER SECTION CSS ENDS HERE */
@@ -312,15 +278,7 @@ cursor: grab;}
 /* Nav container css ends here */
 
 /* header container css starts here */
-@media only screen and (min-width:375px ) and (max-width:800px){
-  header, .part1, .part2{
-    text-align: center;
-    width: 84vw;
-    margin: auto;
-    flex-direction: column;
-    grid-template-columns: 1fr;
-}
-}
+
 /* header container css ends here */
 
 /* HEADER SECTION CSS ENDS HERE */
