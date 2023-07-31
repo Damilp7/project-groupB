@@ -112,41 +112,57 @@ cursor: pointer;
 /* Nav container css ends here */
 
 /* header container css starts here */
-header{
-  width: 100vw;
-  background-color: white;
+.container{
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+}
+.header-container{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+
 }
-header .part1{
-  padding: 70px;
-  font-size: 35px;
-  margin-left: 30px;
-}
-header .part1 h1{
-  padding: 0;
-  font-weight: bold;
-  font-family:"poppins", serif;
-}
-header .part1 p{
-  font-size: 18px;
-  font-weight:200;
-  font-family:"poppins", serif ;
-  color: rgb(133, 127, 127);
-}
-header .part1 button{
-  border-radius: 20px;
-  border-color: hsl(180, 66%, 49%);
-  background-color:hsl(180, 66%, 49%) ;
-  font-size: 18px;
-  color: white;
-  padding: 12px;
-  font-family: "poppins", serif;
-}
-header .part1 button:hover{
-cursor: pointer;
-background-color: rgb(174, 223, 223);
-}
+  .writtings h1{
+    max-width: 21.875rem;
+    font-size: 2.75rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    line-height: 3.5rem;
+  }
+  header h1{
+    padding: 60px;
+    padding: 0;
+    font-weight:400;
+    font-family:"poppins", serif;
+  }
+  
+  header p{
+    font-size: 18px;
+    font-weight:100;
+    font-family:"poppins", serif ;
+    color: rgb(133, 127, 127);
+  }
+  header .image{
+    max-width: 1000px;
+    padding-left: 150px;
+    padding-left: 150px;
+  }
+  header  button{
+    width: 150px;
+    align-items: center;
+    border-radius: 25px;
+    padding: 8px;
+    border-color: hsl(180, 66%, 49%);
+    background-color:hsl(180, 66%, 49%) ;
+    font-size: 16px;
+    color: white;
+    font-family: "poppins", serif;
+  }
+  
+  header button:hover{
+    cursor: pointer;
+    background-color: rgb(174, 223, 223);
+  }
+
 /* header container css ends here */
 
 /* HEADER SECTION CSS ENDS HERE */
@@ -227,14 +243,40 @@ background-color: rgb(174, 223, 223);
 /* Nav container css ends here */
 
 /* header container css starts here */
-@media only screen and (min-width:375px ) and (max-width:800px){
-  header, .part1, .part2{
-    text-align: center;
-    width: 84vw;
-    margin: auto;
-    flex-direction: column;
-    grid-template-columns: 1fr;
+@media only screen and (max-width:600px){
+  .header-container{
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  justify-content: center;
 }
+.writtings{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+header image{
+  display: flex;
+  max-width: 600px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-left:0;
+  margin-right: 150px;
+ }
+ header h1{
+  text-align: center;
+ } 
+ header p{
+  max-width: 21rem;
+  text-align: center;
+ } 
 }
 /* header container css ends here */
 
