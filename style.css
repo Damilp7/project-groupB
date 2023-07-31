@@ -10,8 +10,9 @@ body{
 }
 
 .container{
-  display: grid;
-  grid-template-rows: repeat(7, 1fr);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 /* HEADER SECTION CSS STARTS HERE */
@@ -22,8 +23,8 @@ body{
   justify-content: space-around;
   align-items: center;
   background-color: white;
-
 }
+
 .brand-title{
   display: flex;
   align-items: center;
@@ -117,6 +118,7 @@ header{
   background-color: white;
   display: flex;
   justify-content: space-between;
+  gap: 50px;
 }
 header .part1{
   padding: 70px;
@@ -143,6 +145,7 @@ header .part1 button{
   padding: 12px;
   font-family: "poppins", serif;
 }
+
 header .part1 button:hover{
 cursor: pointer;
 background-color: rgb(174, 223, 223);
@@ -156,15 +159,191 @@ background-color: rgb(174, 223, 223);
 /* MAIN SECTION CSS STARTS HERE */
 
 /* search container css starts here */
-
+.search-container {
+  font-family: 'Poppins', sans-serif;
+  margin: auto;
+  width: 100%;
+  background-color: hsla(40, 12%, 95%, 0.96);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 700px;
+  position: relative;
+  font-size: 10px;
+}
+.search-button {
+  margin: 0 auto;
+  margin-top: -4%;
+  padding: 30px;
+  width: 85%;
+  height: 100px;
+  background: hsl(257, 27%, 26%) url(images/bg-boost-desktop.svg);
+  background-position: center;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  box-shadow:  0px 0px 1px lightgray ;
+}
+.search-button input{
+  outline: 1px solid hsl(0, 87%, 67%);
+  margin: 20px;
+  padding: 15px;
+  width: 1000px;
+  border-radius: 5px;
+  border: none;
+  align-content: center;
+}
+.search-button input::placeholder {
+  padding: 0px 10px;
+  color:  hsl(0, 87%, 67%);
+  font-weight: 500;
+}
+.search-button .btn {
+  margin: 2px;
+  padding: 15px;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.search-button p{
+  color: hsl(0, 87%, 67%);
+}
+.search-links {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  width: 85%;
+  gap: 5px;
+}
+.search-link {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  /* font-size: 13px; */
+  box-shadow:  0px 0px 1px lightgray ;
+}
+.search-link p{
+  display: flex;
+  flex: 1;
+}
+.search-link span {
+  padding: 0px 20px;
+  color: hsl(180, 66%, 49%);
+}
+.search-link  button {
+  padding: 6px 15px;
+  border: none;
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.search-link .copied-btn {
+  background-color: hsl(257, 27%, 26%);
+}
 /* search container css ends here */
 
 /* statistics-container css starts here */
-
+.statistics-container {
+  background-color: hsla(40, 12%, 95%, 0.96);
+  font-family: 'Poppins', sans-serif;
+  margin: 30px 0px;
+}
+.statistics-header {
+  padding-top: 30px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+.statistics-header h2 {
+  font-size: 30px;
+  margin: 15px 0px;
+}
+.statistics-header p{
+  color:  hsl(0, 0%, 75%);
+}
 /* statistics-container css ends here */
 
 /* position container css starts here */
-
+.position-container {
+  margin: 0;
+  width: 100%;
+  background-color: hsla(40, 12%, 95%, 0.96);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+.flex-cards {
+  font-family: 'Poppins', sans-serif;
+  margin: 50px 7%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-around;
+}
+.flex-cards p {
+  color: hsla(0, 1%, 65%, 0.955);
+  font-size: 14px;
+  padding-top: 15px;
+}
+.card1{
+  background-color: white;
+  border: 1px solid rgb(223, 217, 217, 0.685);
+  border-style: none;
+  border-radius: 10px;
+  margin-left: 2rem;
+  padding: 40px;
+  position: relative;
+}
+.card2 {
+  background-color: white;
+  border: 1px solid rgba(223, 217, 217, 0.685);
+  border-style: none;
+  border-radius: 10px;
+  margin-top: 4rem;
+  padding: 40px;
+  position: relative;
+}
+.card3 {
+  background-color: white;
+  border: 1px solid rgb(223, 217, 217, 0.685);
+  border-style: none;
+  border-radius: 10px;
+  margin-top: 8rem;
+  padding: 40px;
+  position: relative;
+}
+.card h3 {
+  margin-top: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+.card p {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 0px;
+  color: hsl(0, 0%, 58%);
+}
+.icon-background {
+  width: 50px;
+  height: 50px;
+  background-color: hsl(257, 27%, 26%);
+  padding: 13px;
+  border-radius: 50%;
+  position: absolute;
+  top: -12%;
+}
 /* position container css ends here */
 
 /* MAIN SECTION CSS ENDS HERE */
@@ -278,6 +457,73 @@ background-color: rgb(174, 223, 223);
   
 }
 
+/* Nav container css ends here */
+
+/* header container css starts here */
+@media only screen and (min-width:375px ) and (max-width:800px){
+  header, .part1, .part2{
+    text-align: center;
+    width: 84vw;
+    margin: auto;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+}
+}
+/* header container css ends here */
+
+/* HEADER SECTION CSS ENDS HERE */
+
+
+
+/* MAIN SECTION CSS STARTS HERE */
+
+/* search container css starts here */
+@media screen and (min-width: 375px) and (max-width: 600px) {
+  .search-button {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-links {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .statistics-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .position-container {
+    flex-direction: column;
+  }
+
+  .flex-cards {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* search container css ends here */
+
+/* statistics-container css starts here */
+
+/* statistics-container css ends here */
+
+/* position container css starts here */
+
+/* position container css ends here */
+
+/* MAIN SECTION CSS ENDS HERE */
+
+
+/* FOOTER SECTION CSS STARTS HERE */
+ 
+/* footer1 container starts here */
+
+/* footer1 container ends here */
+
+/* footer2 container starts here */
 @media screen and (max-width: 600px) {
   .footer-2 {
   grid-template-columns: 1fr;
@@ -312,46 +558,3 @@ background-color: rgb(174, 223, 223);
       margin-bottom: 2rem;
   }
 }
-
-/* Nav container css ends here */
-
-/* header container css starts here */
-@media only screen and (min-width:375px ) and (max-width:800px){
-  header, .part1, .part2{
-    text-align: center;
-    width: 84vw;
-    margin: auto;
-    flex-direction: column;
-    grid-template-columns: 1fr;
-}
-}
-/* header container css ends here */
-
-/* HEADER SECTION CSS ENDS HERE */
-
-
-
-/* MAIN SECTION CSS STARTS HERE */
-
-/* search container css starts here */
-
-/* search container css ends here */
-
-/* statistics-container css starts here */
-
-/* statistics-container css ends here */
-
-/* position container css starts here */
-
-/* position container css ends here */
-
-/* MAIN SECTION CSS ENDS HERE */
-
-
-/* FOOTER SECTION CSS STARTS HERE */
- 
-/* footer1 container starts here */
-
-/* footer1 container ends here */
-
-/* footer2 container starts here */
